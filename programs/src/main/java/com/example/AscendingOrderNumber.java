@@ -33,20 +33,20 @@ public class AscendingOrderNumber {
         for(int i=0;i<length;i++){
             System.out.println("Enter number" +i+ " : ");
             a[i]=s.nextInt();
-    }
-    for(int i=0;i<a.length;i++){
-        for(int j=i+1;j<a.length;j++){
-            if(a[i]>a[j]){
-                temp = a[i];
-                a[i] = a[j];
-                a[j] = temp;
+        }
+        for(int i=0;i<a.length;i++){
+            for(int j=i+1;j<a.length;j++){
+                if(a[i]>a[j]){
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
             }
         }
-    }
-    System.out.println("Acending order : ");
-    for (int i=0;i<a.length;i++){
-        System.out.print(a[i] +" " );
-    }
+        System.out.println("Acending order : ");
+        for (int i=0;i<a.length;i++){
+            System.out.print(a[i] +" " );
+        }
     }
 
     public static void sortUsingArraysFunction(){
